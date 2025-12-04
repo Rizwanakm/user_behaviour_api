@@ -4,7 +4,8 @@ import dotenv from "dotenv";
 import { swaggerSpec } from "./config/swagger";
 import swaggerUi from "swagger-ui-express";
 import userRoutes from "./routes/userRoutes";
-import { connectDB } from "./config/db";
+import connectDB from "./config/db";
+
 
 dotenv.config();
 const app = express();
